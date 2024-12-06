@@ -27,9 +27,9 @@ class AuthFragment : Fragment() {
 
         binding.btnReg.setOnClickListener{
             val user = UserData(
-                binding.etName.toString(),
-                binding.etEmail.toString(),
-                binding.etPassword.toString()
+                binding.etName.text.toString(),
+                binding.etEmail.text.toString(),
+                binding.etPassword.text.toString()
             )
 
             val action = AuthFragmentDirections.actionAuthFragmentToResultFragment(user)
